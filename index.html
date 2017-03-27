@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="robots" content="index, follow">
+<!--[if lt IE 10]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="Learn how to design better user interfaces (UI)">
+
+<meta property="og:url"                content="http://ohapollo.com/" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Design Better UI" />
+<meta property="og:description"        content="Learn how to design better user interfaces with these best practices" />
+<meta property="og:image"              content="https://d13yacurqjgara.cloudfront.net/users/95793/screenshots/3219826/basic-form-elements.jpg" />
+
+<title>OhApollo</title>
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<header role="banner">
+    <nav class="nav" role="navigation">
+      <a href="#ohapollo"><div class="mts" style="width: 70px; height: 70px; border-radius: 70px; background-color: #494949;"></div></a>
+     
+      <ul class="mtxs">
+            <li><a href="#forms" class="active">Forms</a></li>
+                <div class="subNav">
+                  <li><a href="#basic">Basic Elements</a></li>
+                  <li><a href="#validation">Validation</a></li>
+                  <li><a href="#placeholderText">Placeholder Text</a></li>
+                  <li><a href="#internationalization">Internationalization</a></li>
+                  <li> <a href="#presentation">Presentation</a></li>
+                </div>
+            <li><a href="#filters">Filters</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#ohapollo">Subscribe</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="pushover" id="ohapollo">
+        <div class="container-fluid mts mbs">
+          <div class="row">
+            <div class="col-sm-12 pts">
+             <h6 class="h6">Work In Progress</h6>
+              <h1 class="h1">Design Better UI</h1>
+                <h3 class="h3 mbs">Usability and aesthetics focused interface library</h3>
+
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="//ohapollo.us14.list-manage.com/subscribe/post?u=78bda46cb4cb194f551b687f4&amp;id=eee4950553" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+
+      <div class="mc-field-group form-group">
+        <label for="mce-EMAIL">Email Address </label><br/>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button btTxt submit btn btn-default btn-full-width">
+      </div>
+
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_78bda46cb4cb194f551b687f4_eee4950553" tabindex="-1" value=""></div>
+          <div class="clear"></div>
+          </div>
+      </form>
+      </div>
+      <!--End mc_embed_signup-->
+              </div>
+            </div>
+          </div>
+    </div>
+</header>
+
+
+
+
+
+<main id="forms" role="main">
+  <article class="pushover container-fluid" role="article">
+          <div class="row mbs mtm pts pls">
+                  <h2 class="h2 bb pbs">Forms</h2> 
+
+            <div class="row mbm ptm" id="basic">
+                <div class="col-sm-5 mbs">
+                <h3 class="h3">Basic Form Elements</h3>
+                      <p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry interface, forms are one of the most important components of digital product design.</p> 
+                      <p>Below you will find common best practices of form design. Keep in mind there are exceptions to every rule. Feel free to download the UI kit and use in your next project.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                    <figure>
+                      <img class="img-responsive br" src="https://d13yacurqjgara.cloudfront.net/users/95793/screenshots/3219826/basic-form-elements.jpg">
+                    </figure>
+                      <a href="https://dribbble.com/shots/3219826-Basic-Form-Elements" target="_blank" class="btn btn-default mtxs" style="display:block;" role="button">Download UI Kit (Sketch)</a>
+                  </div> 
+              </div>
+          </div>
+
+
+      <!-- Basic Rules -->
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">1. Forms should be one column</h4>
+                      <p>Multiple columns disrupt a users vertical momentum.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*XhzxeTnAuWoaeJmlPBP0bw.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">2. Group labels with their inputs</h4>
+                      <p>Present the label and input close together, and make sure there is enough height between the fields so users don’t get confused.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*obwyjb54NCWy3sOPfm2WEg.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">3. Avoid all caps</h4>
+                      <p>All caps is more difficult to read and scan.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*w6nZOf5pZSha6FoWu3YtRw.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">4. Show all selection options if under 6</h4>
+                      <p>Placing options in a selector drop-down requires two clicks, and hides the options. Use an input selector if there are over 5 options. Incorporate contextual search within the drop-down if there are over 25 options.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*VvQeOFsY57NJxtZmKyRnHA.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">5. Resist using placeholder text as labels</h4>
+                      <p>It is tempting to optimize space by using placeholder text as labels, but it causes many <a style="display: inline; color: #349BE0; padding: 0; text-decoration: underline;" target="_blank" href="https://uxdesign.cc/alternatives-to-placeholder-text-13f430abc56f">usability issues.</a></p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*XvUnJwHtQhJ3Wl8Apj9lhQ.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">6. Ditch the * and denote optional fields</h4>
+                      <p>Users don’t always know what is implied by the required field marker (*). Instead, it is better to denote optional fields.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*riNfOVAxTChvaQ29n-6IPQ.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">7. Group related information</h4>
+                      <p>Users think in batches, and long forms can feel overwhelming. By creating logical groups, the user will make sense of the form much faster.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*nmeMIuW7csU9uVTB9BIBTg.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">8. Differentiate primary from secondary actions</h4>
+                      <p>Provide visual prominence to the main action.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*STZ7rbj0wO5u2sn0bsR-KQ.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+
+
+
+            <section>
+              <div class="row mbm pts">
+                <div class="col-sm-5 mbs ptm">
+                  <h4 class="h4">9. Make CTAs descriptive</h4>
+                      <p>A call to action should state the intent.</p>
+                  </div>
+                  <div class="col-sm-7 mbs">
+                  <figure>
+                      <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*VzlN4tj2hQRUel2iNzM9dw.jpeg">
+                  </figure>
+                  </div> 
+              </div>
+            </section>
+      <!-- Basic Rules End -->
+    </article>
+
+
+
+
+
+
+
+
+    <article class="pushover container-fluid" id="validation" role="article">
+            <div class="row mbm ptm bt">
+              <div class="col-sm-5">
+              <h3 class="h3">Errors and Validation</h3>
+                    <p>Inline validation is a method to check the validity of an input and give feedback before submission. It enhances the usability and user experience of forms.</p> 
+                    <p>Inline form validation and error handling design techniques are explained below. Feel free to download the UI kit and use in your next project.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/95793/screenshots/3266488/errors_and_validation.jpg">
+                  </figure>
+                    <a href="https://dribbble.com/shots/3266488-Errors-And-Validation" target="_blank" class="btn btn-default mtxs" style="display:block;" role="button">Download UI Kit (Sketch)</a>
+                </div> 
+            </div>
+
+    <!-- Errors and Validation Rules -->
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">5 ways to provide validation</h4>
+                     <p>Below are ways to present inline validation and errors. Each has its trade-offs and limitations. It’s important to address problems early and at their source.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/800/1*GkbL2-v4ZnPCkjX_qENIpg.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">1. Provide helper text until the entry can be validated</h4>
+                    <p>Immediately showing an error when a user clicks into a field is annoying, misleading, and distracting. Instead, when a user clicks into an input, present helper text in place of an error until the error is confirmed, or the entry validated.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1000/1*J8Fplefyf7-67jf0f23dqA.jpeg">
+                </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm pts">
+              <div class="col-sm-5 mbs ptxs">
+                <h4 class="h4">2. Provide validation as a user types</h4>
+                    <p>This method provides helpful feedback for password strength and username availability. Avoid using this technique for other input types because it will annoy the user by harassing them with each entered character until the entry is validated.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1000/1*P-vT9AnP4iSPE6ob6OSmmg.jpeg">
+                </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm pts">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">3. Provide validation once the user reaches a character requirement</h4>
+                    <p>This validation method works for inputs with predictable character lengths like Zip codes, phone numbers, CC numbers, etc. However, this can be problematic for <a style="display: inline; color: #349BE0; padding: 0; text-decoration: underline;" target="_blank" href="https://medium.com/ohapollo/form-internationalization-techniques-3e4d394cd7e5">internationalization</a> because the intended formate is not always known.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/600/1*smLh69YQQHeAB_V8IjLVoA.jpeg">
+                </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm pts">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">4. Provide validation when a user leaves the field</h4>
+                    <p>This is probably the best default behavior because validation occurs after the entry is made explicit. However, it can disrupt a user’s flow because it provides feedback after the user has moved on.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/600/1*obM310umFGFCX_WUZm8FYQ.jpeg">
+                </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm pts">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">5. Provide validation when a user pauses</h4>
+                    <p>This mitigates the annoyance of inline errors as the user types, and provides feedback when they pause, as well as when exit the input.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/600/1*ukUmHTkQeDce4Ae7nHl-5g.jpeg">
+                </figure>
+                </div> 
+            </div>
+          </section>
+    <!-- Errors and Validation Rules End -->
+    </article>
+
+
+
+
+
+
+
+    <article class="pushover container-fluid" id="placeholderText" role="article">
+            <div class="row mbm ptm bt">
+              <div class="col-sm-5 mbs prm">
+                <h3 class="h3">Placeholder Text</h3>
+                    <p>Placeholder text can be used as an attribute for almost every HTML input type, and misguided designers and developers don’t hesitate. It is tempting to use placeholder text to provide text help for complex forms, or omit input labels to improve aesthetics. However, doing so causes many usability issues, which are listed below.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive" src="https://d13yacurqjgara.cloudfront.net/users/95793/screenshots/3285869/placeholder-and-help-text.jpg">
+                  </figure>
+                    <a href="https://dribbble.com/shots/3285869-Placeholder-And-Help-Text" target="_blank" class="btn btn-default mtxs" style="display:block;" role="button">Download UI Kit (Sketch)</a>
+                </div> 
+            </div>
+
+<!-- Helper and Placeholder Text Rules -->
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptxs">
+                <h4 class="h4">Avoid using a placeholder as a label</h4>
+                     <p>In an attempt to shorten the length of a form or reduce visual noise, designers use placeholder text as an input label. The label disappears as soon as the user begins typing, and the entry must be deleted to expose the label again. This practice places a burden on short-term memory.</p>
+
+                      <p>It is better to include an input label directly above the input field. The blank input acts as an affordance to enter data </p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*VVH95tbDsEHli9ENN0FPLA.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs pts">
+                <h4 class="h4">Avoid using a placeholder as example text</h4>
+                     <p>Providing an example helps a user understand the request. However, incorporating the example as placeholder text causes issues including: disappearance on focus, confusion regarding what was entered, and reduction of the input acting as an affordance. As an alternative, example text can be placed below the input.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*HlPOAdczH6mwuAHumdiKEw.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs pts">
+                <h4 class="h4">Avoid using a placeholder as help text</h4>
+                     <p>Placeholder text is often employed to provide more information on what is needed to complete a field. This practice is bad for the same reasons stated earlier, and even more dubious because of the amount of text used. Misguided designers and developers often make the mistake of using a placeholder to communicate lengthy messages. </p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*ycSVcMIX1ewnbuGNHHDgIg.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Avoid placeholders as secondary labels</h4>
+                     <p>It is tempting to use placeholder text for secondary labels. However, form usability will increase if a regular input label is used instead.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*x4dSBRkMgd6lFhaBOm6IqA.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs pts">
+                <h4 class="h4">Placeholders should be of a lighter value than input text</h4>
+                     <p>Users fill in the blanks. A blank input is an affordance to enter text, which a placeholder can diminish. This is especially true when placeholders are high in color value because users can mistake it for a prior entry.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*31hGNZqZvhkOBkMGQKAepA.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Placeholders should be visible on all screens</h4>
+                     <p>Placeholder text causes issues if the color value is too low because it may not be visible on certain screens, leading users to squint.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*sX5wzU5nhWod7vC-VXS1Rg.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Placeholders should not disappear when a user clicks into the input</h4>
+                     <p>A burden is placed on a user’s short-term memory when a placeholder is omitted on focus.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*PuthyBD2JKLeDA6LYtmd2A.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+<!-- End of Helper and Placeholder Text Rules -->
+    </article>
+
+
+
+
+
+
+
+
+    <article class="pushover container-fluid" id="internationalization" role="article">
+            <div class="row mbm ptm bt">
+              <div class="col-sm-5 mbs prm">
+                <h3 class="h3">Address Internationalization</h3>
+                    <p>We live in a globalized world and internationalization needs to be taken seriously. Below are four techniques to adapt form addresses to accommodate the structure variability of different countries.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive" src="https://cdn-images-1.medium.com/max/1600/1*Eqdm8Gj2I3fVRo7J-d3XoQ.jpeg">
+                  </figure>
+                   <!-- <a href="https://dribbble.com/shots/3266488-Errors-And-Validation" target="_blank" class="btn btn-default mtxs" style="display:block;" role="button">Download UI Kit (Sketch)</a>-->  
+                </div> 
+            </div>
+
+<!-- Form Internationalization Rules -->    
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Specific Format</h4>
+                     <p>The specific format works when the system can interpret the user’s country and present the appropriate address structure. This technique is problematic if the system doesn’t have access to a user’s geo-location data, or if the user intends to enter an address for a location outside their country. For example, geo-location data is of no use if the user is entering a list of global distribution centers into a network database. The changing format is a better approach for this use case.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*pN0ylY2v94OxGsmDITWpmw.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Generic Format</h4>
+                     <p>The generic format is the most flexible way to capture an address. Each input is unstructured, which makes it hard to check for errors. This approach can cause data integrity issues because the user can enter an address in various ways. State/Province/Region and ZIP/Postal Code should be optional because not every address will have them.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/1600/1*0LXxQIsISWD6dlCon1e0Ng.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Changing Format</h4>
+                     <p>Changing formats present the appropriate address fields based on the specified country. The country selector is presented before or after the address fields. When a user selects a country the field labels change and the structure reformats. The changing format can also be achieved by asking for a user’s country in a step before presenting the address fields.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*DXe1CEUYKDB7EOV9K1VIrw.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+
+          <section>
+            <div class="row mbm">
+              <div class="col-sm-5 mbs ptm">
+                <h4 class="h4">Auto Morph</h4>
+                     <p>The auto morph incorporates an auto-complete address field input. A user is presented with a list of suggested addresses as they type. The user then chooses the correct address and the form changes structure based on the country and populates the selected data in the fields below. The user can then edit and add any missing data.</p>
+                </div>
+                <div class="col-sm-7 mbs">
+                  <figure>
+                    <img class="img-responsive br" src="https://cdn-images-1.medium.com/max/2000/1*PrvfUBkmqsM0rHoUru7YoQ.jpeg">
+                  </figure>
+                </div> 
+            </div>
+          </section>
+<!-- End of Form Internationalization Rules -->    
+    </article>
+
+
+
+
+
+
+
+    <article class="pushover container-fluid" id="presentation" role="article">
+            <div class="row mbm ptm bt">
+              <div class="col-sm-6 mbs prm">
+              <h6 class="h6">Coming Soon</h6>
+                <h3 class="h3">Form Presentation</h3>
+                <a href="https://uxdesign.cc/form-design-for-complex-applications-d8a1d025eba6" target="_blank" class="btn btn-default mbs" role="button">Read the Article</a>
+                    <p></p>
+                </div>
+                <div class="col-sm-6 mbs">
+                <figure>
+                    <img class="img-responsive" src="https://cdn-images-1.medium.com/max/2000/1*RVpQciv-R44ZlAY_dKEXgw.jpeg">
+                </figure>
+                </div> 
+            </div>
+    </article>
+</main>
+
+
+  <article class="pushover container-fluid" id="filters" role="article">
+          <div class="row mbl mtm pts pls">
+              <h2 class="h2 bb pbs">Filters</h2> 
+              <h6 class="h6">Coming Soon</h6>
+          </div>
+  </article>     
+
+
+  <article class="pushover container-fluid" id="tables" role="article">
+          <div class="row mbl mtm pts pls">
+              <h2 class="h2 bb pbs">Tables</h2> 
+              <h6 class="h6">Coming Soon</h6>
+          </div>
+  </article>        
+
+
+
+  <article class="pushover container-fluid" id="navigation" role="article">
+          <div class="row mbl mtm pts pls">
+              <h2 class="h2 bb pbs">Navigation</h2> 
+              <h6 class="h6">Coming Soon</h6>
+          </div>
+  </article>
+
+
+
+  <footer class="pushover" role="contentinfo">
+            <div class="mbm">
+            <p>OhApollo is a side project created by <a style="padding: 0; display: inline;" target="_blank" href="https://twitter.com/CoyleAndrew">Andrew Coyle</a>. Its aim is to help designers understand UI design best practices.</p>
+            </div>
+  </footer>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+  $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

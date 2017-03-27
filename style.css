@@ -1,0 +1,472 @@
+body{
+	font-family: 'Lato', sans-serif;
+	max-width: 1250px; 
+	margin: 0 auto;
+}
+
+
+
+.h1{
+	font-size: 84px;
+	font-weight: 700;
+	color: #494949;
+	margin-top: -8px;
+}
+
+
+.h2{
+	font-size: 34px;
+	font-weight: 700;
+	margin-top: 0;
+	color: #494949;
+}
+
+
+.h3{
+	font-size: 30px;
+	font-weight: 300;
+	margin-top: 0;
+	color: #8D8D8D;
+}
+
+
+.h4{
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 0;
+	color: #494949;
+	line-height: 1;
+}
+
+
+p{
+	font-size: 16px;
+	color: #494949;
+	margin-top: 15px;
+}
+
+
+.h6{
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+
+
+label {
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	color: #8D8D8D;
+}
+
+.form-control{
+	box-shadow: none;
+	border: 2px solid #E6E9EE;
+	height: 40px;
+	font-size: 16px;
+	display: inline;
+	width: 66%;
+	vertical-align: middle;
+}
+
+
+button, html input[type=button], input[type=reset], input[type=submit]{
+	color: #fff;
+	background-color: #349BE0;
+	border: none;
+}
+
+
+.btn{
+	padding: 9px 20px;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+
+
+.btn-default {
+    color: #fff;
+    background-color: #F6C80F;
+    border: none;
+}
+
+
+
+
+.coming-soon{
+	background-color: #E2E2E2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bkg-lightGrey{
+	background-color: #fafafa;
+}
+
+
+
+
+.bt{
+	border-top: 1px solid #F6F6F6;
+}
+
+
+.bb{
+	border-bottom: 1px solid #F6F6F6;
+}
+
+.br{
+	border-radius: 8px;
+}
+
+
+
+/* Nav */
+.nav{
+	width: 250px;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
+
+ a {
+    display: block;
+    color: #8D8D8D;
+    padding: 8px 30px;
+    text-decoration: none;
+}
+
+ a.active {
+ 	color: #494949;
+}
+
+ a:hover:not(.active) {
+}
+
+.subNav{
+	padding-left: 20px;
+}
+
+.subNav a{
+	font-size: 14px;
+	color: #494949;
+	font-weight: 400;
+}
+
+.pushover{
+	margin-left: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .nav{
+        visibility: collapse;
+    }
+
+    .pushover{
+    	margin: 0;
+    }
+   
+}
+/* Nav End */
+
+
+
+
+
+
+
+
+
+
+
+
+/* White Space */
+
+.prl{
+	padding-right: 100px;
+}
+
+.pll{
+	padding-left: 100px;
+}
+
+.ptl{
+	padding-top: 100px;
+}
+
+.pbl{
+	padding-bottom: 100px;
+}
+
+
+
+.prm{
+	padding-right: 50px;
+}
+
+.plm{
+	padding-left: 50px;
+}
+
+.ptm{
+	padding-top: 50px;
+}
+
+.pbm{
+	padding-bottom: 50px;
+}
+
+
+
+.prs{
+	padding-right: 20px;
+}
+
+.pls{
+	padding-left: 20px;
+}
+
+.pts{
+	padding-top: 20px;
+}
+
+.pbs{
+	padding-bottom: 20px;
+}
+
+
+
+.prxs{
+	padding-right: 10px;
+}
+
+.plxs{
+	padding-left: 10px;
+}
+
+.ptxs{
+	padding-top: 10px;
+}
+
+.pbxs{
+	padding-bottom: 10px;
+}
+
+
+
+.mrl{
+	margin-right: 100px;
+}
+
+.mll{
+	margin-left: 100px;
+}
+
+.mtl{
+	margin-top: 100px;
+}
+
+.mbl{
+	margin-bottom: 100px;
+}
+
+
+
+.mrm{
+	margin-right: 50px;
+}
+
+.mlm{
+	margin-left: 50px;
+}
+
+.mtm{
+	margin-top: 50px;
+}
+
+.mbm{
+	margin-bottom: 50px;
+}
+
+
+
+.mrs{
+	margin-right: 20px;
+}
+
+.mls{
+	margin-left: 20px;
+}
+
+.mts{
+	margin-top: 20px;
+}
+
+.mbs{
+	margin-bottom: 20px;
+}
+
+
+
+.mrxs{
+	margin-right: 10px;
+}
+
+.mlxs{
+	margin-left: 10px;
+}
+
+.mtxs{
+	margin-top: 10px;
+}
+
+.mbxs{
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.almost-full-width{
+	width: 80%;
+}
+
+.max-width-signup{
+	max-width: 100%;
+}
+
+.text-max{
+	max-width: 500px;
+}
+
+
+.margin-top-0{
+	margin-top: 0;
+}
+
+@media only screen and (max-width : 900px){
+
+
+
+}
+
+@media only screen and (max-width : 767px){
+
+	.text-max{
+	max-width: 100%;
+}
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width : 768px){
+
+.form-control{
+	width: 100%;
+}
+
+
+
+.text-0{
+	margin:0;
+	padding: 0 20px;
+	text-align: center;
+}
+
+	.almost-full-width{
+	width: 100%;
+}
+
+	.btn-full-width{
+	width: 100%;
+}
+
+.max-width-signup{
+	max-width: 100%;
+}
+
+
+.ptl{
+	padding-top: 0px;
+}
+
+
+.plm{
+	padding-left: 20px;
+}
+
+.ptm{
+	padding-top: 0px;
+}
+
+
+
+.mbl{
+	margin-bottom: 0px;
+}
+
+.h1{
+	font-size: 40px;
+}
+
+.h2{
+	font-size: 30px;
+}
+
+.h3{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.h4{
+	font-size: 14px;
+}
+
+.h6{
+	font-size: 12px;
+}
+
+label {
+	font-size: 14px;
+}
+
+
+}
+
+
+
